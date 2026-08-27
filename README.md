@@ -34,7 +34,7 @@ What is behind negative customer reviews on Olist — delivery time, product cat
 Most of the reviews are 5-star and 4 star, but there is a second spike at 1-star, which brings the question : What makes the customer very unhappy about the platform?
 
 ![Review score distribution](images/01_review_score_distribution.png)
-[`sql_queries/01_review_score_distribution.sql`](sql/01_review_score_distribution.sql)
+[`sql queries/01_review_score_distribution.sql`](sql%20queries/01_review_score_distribution.sql)
 
 **2. Payment method vs. review score - no link**
 
@@ -43,7 +43,7 @@ Checked whether the payment method used (credit card, debit card, boleto, or vou
 Also, the fifth category (not_defined) shows a lower score, but it is based only on 3 records, which is a too small group to take in count.
 
 ![Payment method vs review score](images/02_payment_method_vs_review.png)
-[`sql_queries/02_payment_method_vs_review.sql`](sql/02_payment_method_vs_review.sql)
+[`sql queries/02_payment_method_vs_review.sql`](sql%20queries/02_payment_method_vs_review.sql)
 
 **3. Delivery time vs. review score (main finding)**
 
@@ -52,12 +52,12 @@ Checked if the delivery time can affect the review score.
 ***3.1***
 First, excluded orders that were never delivered (about 3% of the total), since delivery time can't be measured for those
 
-[`sql_queries/03_order_status_breakdown.sql`](sql/03_order_status_breakdown.sql)
+[`sql queries/03_order_status_breakdown.sql`](sql%20queries/03_order_status_breakdown.sql)
 
 ***3.2*** Compared the delivery time vs the review score.
 
 ![Average review score by delivery time](images/04_avg_review_score_by_delivery_time.png)
-[`sql_queries/04_avg_review_score_by_delivery_time.sql`](sql/04_avg_review_score_by_delivery_time.sql)
+[`sql queries/04_avg_review_score_by_delivery_time.sql`](sql%20queries/04_avg_review_score_by_delivery_time.sql)
 
 
 ***Main finding*** : The longer the delivery time, the lower the score.
@@ -73,7 +73,7 @@ This pattern shows up multiple times and is confirmed by the graph.
 A few categories have lower scores, but the gap is too small ( 3.3-4.7), compared to the delivery-time finding.
 
 ![Category ranking, filtered](images/05_category_ranking_filtered.png)
-[`sql_queries/05_category_ranking_filtered.sql`](sql/05_category_ranking_filtered.sql)
+[`sql queries/05_category_ranking_filtered.sql`](sql%20queries/05_category_ranking_filtered.sql)
 
 ## Key Findings
 
